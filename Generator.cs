@@ -26,7 +26,7 @@ namespace WebApiEndpointGenerator
 			var generator = new CSharpClientGenerator(document, settings);
 			var code = generator.GenerateFile();
 
-			File.WriteAllText(className + ".cs", code);
+			File.WriteAllText(className + "generated.cs", code);
 		}
 	}
 }
